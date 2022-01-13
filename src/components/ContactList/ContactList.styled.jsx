@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const ContactsRoster = styled.ul`
   color: #c5c5c5;
-  width: 350px;
+  max-width: 400px;
 `;
 
 export const ContactsData = styled.li`

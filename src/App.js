@@ -21,7 +21,9 @@ class App extends Component {
     const newContact = { id: shortid.generate(), name: data.name, number: data.number };
     if (
       contacts.find(
-        contact => contact.name === newContact.name || contact.number === newContact.number,
+        contact =>
+          contact.name.toLowerCase() === newContact.name.toLowerCase() ||
+          contact.number === newContact.number,
       )
     ) {
       return alert(`${newContact.name} is already in contacts!`);
